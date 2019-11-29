@@ -27,10 +27,8 @@ def main():
     
     sim = cirq.Simulator()
     results = sim.run(circuit, repetitions=10)
-    print("Circuit:")
-    print(circuit)
-    print("\nResults:")
-    print(results)
+    print("Circuit:\n", circuit)
+    print("\nResults:\n", results)
     print(results.histogram(key='q0'))
 
 
