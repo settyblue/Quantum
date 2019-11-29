@@ -18,6 +18,7 @@ Counter({1: 7, 0: 3})
 """
 import cirq
 
+
 def main():
     circuit = cirq.Circuit()
     q0 = cirq.LineQubit(1)
@@ -31,5 +32,7 @@ def main():
     print("\nResults:")
     print(results)
     print(results.histogram(key='q0'))
+
+
 if __name__ == '__main__':
     main()
