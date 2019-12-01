@@ -25,9 +25,8 @@ def main():
     sim = cirq.Simulator()
     results = sim.simulate(circuit, qubit_order = [q0, q1])
     print("Circuit:", circuit, sep='\n')
-    # print("Results:", results, sep='\n')
     print(np.around(results.final_state, 3))
-    
-    
+
+
 if __name__ == '__main__':
     main()
